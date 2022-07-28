@@ -6,6 +6,7 @@ import { ChangePasswordComponent } from './components/change-password/change-pas
 import { AuthComponent } from './auth.component';
 import { RouterModule } from '@angular/router';
 import { AuthRoutingModule } from './auth-routing.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,6 @@ import { AuthRoutingModule } from './auth-routing.module';
     ChangePasswordComponent,
     AuthComponent,
   ],
-  imports: [CommonModule, RouterModule, AuthRoutingModule],
+  imports: [CommonModule, RouterModule, AuthRoutingModule, FormsModule],
 })
 export class AuthModule {}
